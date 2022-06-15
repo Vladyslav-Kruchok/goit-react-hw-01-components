@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import styles from "../../css/TransactionHistory/THeadRowTH.module.css";
-export const THeadRowTH = (props) => {
+export const THeadRowTH = ({hType, hAmount, hCurrency}) => {
     return (
         <tr className={styles.headRow}>
-            <th>{props.hType}</th>
-            <th>{props.hAmount}</th>
-            <th>{props.hCurrency}</th>
+            <th>{hType}</th>
+            <th>{hAmount}</th>
+            <th>{hCurrency}</th>
         </tr>
     );
 };

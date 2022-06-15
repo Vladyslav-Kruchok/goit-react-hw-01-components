@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import styles from "../../css/Statistics/StatList.module.css";
 
 const defaultText = "empty";
-export const StatList = (props) => {
+export const StatList = ({stats}) => {
     return (
         <ul className={styles.statList}>
-            {props.stats.map(({id, label, percentage}) =>
+            {stats.map(({id, label, percentage}) =>
                 <li className={styles.item}
                     style={{backgroundColor: getRandomHexColor()}}
                     key={id}>

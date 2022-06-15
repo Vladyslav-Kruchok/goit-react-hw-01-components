@@ -4,12 +4,12 @@ import { FriendItem } from "../FriendList/FriendItem";
 
 import style from "../../css/FriendList/FriendList.module.css";
 
-export const FriendList = (props) => {
+export const FriendList = ({friends}) => {
     
     return (
         <ul className={style.friendList}>
             {
-                props.friends.map(({isOnline, avatar, name, id}) =>
+                friends.map(({isOnline, avatar, name, id}) =>
                     <FriendItem
                         status={isOnline}
                         avatar={avatar}

@@ -4,7 +4,7 @@ import styles from "../../css/TransactionHistory/TransactionHistory.module.css"
 import { THeadRowTH } from "./THeadRowTH";
 import { TBodyRowTH } from "./TBodyRowTH";
 
-export const TransactionHistory = (props) => {
+export const TransactionHistory = ({transactions}) => {
     return (
         <table className={styles.transactionHistory}>
             <thead>
@@ -15,7 +15,7 @@ export const TransactionHistory = (props) => {
             </thead>
             <tbody>
             {
-                    props.transactions.map(({id, type, amount, currency}, index) => {
+                    transactions.map(({id, type, amount, currency}, index) => {
                         const res = (index % 2 === 0 || index === 0) ? true : false;
                         return <TBodyRowTH
                                 key={id}

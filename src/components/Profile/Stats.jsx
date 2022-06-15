@@ -1,8 +1,7 @@
 import styles from "../../css/Profile/Stats.module.css";
 import PropTypes from "prop-types";
 
-export const Stats = (props) => { 
-    const { followers, views, likes } = props.stats;
+export const Stats = ({ stats: {followers, views, likes}}) => { 
     return (
         <ul className={styles.stats}>
             <li>
@@ -22,7 +21,7 @@ export const Stats = (props) => {
 };
 
 Stats.protoType = {
-stats: PropTypes.arrayOf(PropTypes.shape({
+stats: PropTypes.objectOf(PropTypes.shape({
             followers: PropTypes.number.isRequired,
             views: PropTypes.number.isRequired,
             likes: PropTypes.number.isRequired

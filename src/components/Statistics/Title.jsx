@@ -2,11 +2,10 @@ import PropTypes from "prop-types";
 
 import styles from "../../css/Statistics/Title.module.css";
 
-const defaultTitle = "Upload stats";
-export const Title = (props) => {
-    if(props.title)
+export const Title = ({title}) => {
+    if(title)
         return (
-            <h2 className={styles.title}>{ props.title || defaultTitle}</h2>
+            title && <h2 className={styles.title}>{title}</h2>
         );
 };
 

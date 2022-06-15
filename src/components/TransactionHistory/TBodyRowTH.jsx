@@ -1,18 +1,17 @@
 import PropTypes from "prop-types";
 import styles from "../../css/TransactionHistory/TBodyRowTH.module.css"
 
-export const TBodyRowTH = (props) => { 
+export const TBodyRowTH = ({colorClass, type, amount, currency}) => { 
     return (
-        <tr className={props.colorClass ? styles.colorSecond : styles.colorFirst} key={props.id}>
-            <td className={styles.itemCenter}>{props.type}</td>
-            <td className={styles.itemCenter}>{props.amount}</td>
-            <td className={styles.itemCenter}>{props.currency}</td>
+        <tr className={colorClass ? styles.colorSecond : styles.colorFirst}>
+            <td className={styles.itemCenter}>{type}</td>
+            <td className={styles.itemCenter}>{amount}</td>
+            <td className={styles.itemCenter}>{currency}</td>
         </tr>
     );
 };
 
 TBodyRowTH.protoType = {
-    id: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
