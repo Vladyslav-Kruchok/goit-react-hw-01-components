@@ -1,0 +1,7 @@
+@import "../variables.module.css";
+
+.transactionHistory {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}

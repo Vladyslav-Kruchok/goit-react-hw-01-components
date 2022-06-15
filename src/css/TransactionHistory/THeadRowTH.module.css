@@ -1,0 +1,4 @@
+@import "../variables.module.css";
+.headRow {
+    background-color: var(--headRow-color);
+}

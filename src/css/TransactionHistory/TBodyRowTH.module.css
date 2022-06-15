@@ -1,0 +1,13 @@
+@import "../variables.module.css";
+
+.colorFirst {
+    background-color: var(--firstRow-color);
+}
+
+.colorSecond {
+    background-color: var(--secondRow-color);
+}
+
+.itemCenter {
+    text-align: center;
+}

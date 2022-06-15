@@ -1,0 +1,19 @@
+@import "../variables.module.css";
+
+.profile{
+        text-align: center;
+        padding: 20px 0 0;
+        margin: auto;
+        background-color: var(--first-color);
+        box-shadow: var(--shadow);
+}
+
+.sectionProfile {
+        background-color: var(--third-color);
+        box-sizing: border-box;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        padding: 100px;
+}

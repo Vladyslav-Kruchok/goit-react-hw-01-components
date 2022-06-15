@@ -1,0 +1,8 @@
+@import "../../css/variables.module.css";
+
+.title{
+    padding: 50px 100px;
+    text-align: center;
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+}

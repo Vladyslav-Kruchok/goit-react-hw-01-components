@@ -1,0 +1,26 @@
+@import "../variables.module.css";
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--third-color);
+    font: inherit;
+    font-size: 18px;
+    line-height: calc(22/18);
+}
+.stats li{
+    width: 98px;
+    padding: 20px 0;
+    border: 1px solid var(--fourth-color);
+}
+
+.label {
+    color: var(--fourth-color);
+    display: block;
+    font-weight: 600;
+}
+
+.quantity {
+    display: block;
+    font-weight: 600;
+}

@@ -1,0 +1,30 @@
+@import "../variables.module.css";
+
+.item {
+    padding: 20px;
+    margin-bottom: 2px;
+    align-items: center;
+    display: flex;
+    background-color: var(--first-color);
+    box-shadow: var(--shadow);
+    font-size: 40px;
+    line-height: calc(52/40);
+    font-weight: 500;
+}
+
+.status {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--offLine-color);
+}
+.onLine {
+    background-color: var(--onLine-color);
+}
+
+.avatar {
+    margin: 0 10px;
+}
+
+.name {}
